@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Website Service - Goo Businesses</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utils.css">
+</head>
+
+<body>
+    <header>
+
+        <nav>
+            <div class="logo">
+                <img src="/static/img/Goo%20Businesses.png" height="73px">
+            </div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/whyus">Why us?</a></li>
+            </ul>
+            <form class="form" action="/searching" method="post">
+                
+                <div class="search">
+                    <input class="form-ele1" type="text" id="searchbarID" name="seachbar" placeholder="Search here..."
+                        width="20vw">
+                </div>
+                <div class="btn">
+                    <button class="bttn" type="submit">Search</button>
+                </div>
+            </form>
+
+            <a href="/searching">
+                <div class="navallproduct">All Services</div>
+            </a>
+
+        </nav>
+
+        <a href="/freetrail" class="freeTrl bblink">Get Your<br>Free Trial<br>up to $30</a>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="service-details">
+                <img class="service-image" src="/media/AllServicesDBimgFolder/static_website.jpg" alt="Static Website">
+                <h2>Static Website</h2>
+                <p class="price">Price: $500</p>
+                <p class="discount">Discount: 10%</p>
+            </div>
+
+            <div class="order-form">
+                <h3>Place Your Order</h3>
+                <form action="/order" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address" required></textarea>
+
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" required>
+
+                    <button type="submit">Submit Order</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <!-- Your footer content, if any -->
+    </footer>
+
+</body>
+
+</html>
